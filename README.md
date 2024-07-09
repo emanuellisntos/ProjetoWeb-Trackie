@@ -17,7 +17,7 @@ Logo e banner criados por mim. :)
 
 Página Home com o banner principal e a recomendação semanal de músicas (onde será aplicado um <iframe> do [Spotify](https://open.spotify.com/intl-pt)).
 
-![image](https://github.com/emanuellisntos/ProjetoWeb/assets/99870160/26f4eb55-6070-48dd-93d9-70ed4aa0ce1c)
+![image](https://github.com/emanuellisntos/ProjetoWeb-Trackie/assets/99870160/c3d76689-e35b-4e43-927c-7e60deaef23b)
 
 <br>
 
@@ -25,7 +25,7 @@ Página Home com o banner principal e a recomendação semanal de músicas (onde
 
 Página Explorar onde o usuário poderá explorar mais artistas, álbuns, gêneros músicais, etc (independente da página, o botão Explorar (localizado no menu de navegação) será em efeito <b>dropdown</b>, mostrando os tópicos da página e também dando acesso às páginas Eventos e Gêneros Musicais).
 
-![image](https://github.com/emanuellisntos/ProjetoWeb/assets/99870160/7c4281e9-f606-4e7c-bec6-b98d5b2f2c74)
+![image](https://github.com/emanuellisntos/ProjetoWeb-Trackie/assets/99870160/9978b66a-2f7e-4c7c-8289-53804f0eff42)
 
 <br>
 
@@ -33,7 +33,7 @@ Página Explorar onde o usuário poderá explorar mais artistas, álbuns, gêner
 
 Página Gêneros Musicais que mostrará os gêneros recomendados da semana e artistas sugeridos de cada gênero.
 
-![image](https://github.com/emanuellisntos/ProjetoWeb/assets/99870160/d59b8f2d-63b0-4a6d-8b0b-013094886156)
+![image](https://github.com/emanuellisntos/ProjetoWeb-Trackie/assets/99870160/c1595c1d-2100-41ed-9991-317fb1ad5f1c)
 
 <br>
 
@@ -41,7 +41,7 @@ Página Gêneros Musicais que mostrará os gêneros recomendados da semana e art
 
 Página Eventos Musicais que mostrará eventos musicais para os usuários, além de um mapa (com <iframe> do [Google Maps](https://www.google.com.br/maps/preview)) para o usuário poder localizar eventos próximos a ele.
 
-![image](https://github.com/emanuellisntos/ProjetoWeb/assets/99870160/4f34eabb-14a0-47aa-9393-f68db06d344a)
+![image](https://github.com/emanuellisntos/ProjetoWeb-Trackie/assets/99870160/11f2a761-8186-49d2-aa30-58b8145ca60f)
 
 <br>
 
@@ -49,19 +49,19 @@ Página Eventos Musicais que mostrará eventos musicais para os usuários, além
 
 Página de Contato com um formulário (que no momento não receberá respostas), onde o usuário poderá enviar uma sugestão para as próximas semanas.
 
-![image](https://github.com/emanuellisntos/ProjetoWeb/assets/99870160/b773977c-1985-4637-85ce-6279f66949f6)
+![image](https://github.com/emanuellisntos/ProjetoWeb-Trackie/assets/99870160/68b5b721-3d7e-49ff-bef2-6f304fb77a9c)
 
 ---
 
 <b>Paleta de cores</b>
 
-![image](https://github.com/emanuellisntos/ProjetoWeb/assets/99870160/c49ed332-b9fc-428c-9981-f64ac3fb4995)
+![image](https://github.com/emanuellisntos/ProjetoWeb-Trackie/assets/99870160/5bc8f90c-60c8-4e30-b0f4-d2e6dff57022)
 
 <br>
 
 <b>Fontes usadas</b>
 
-![image](https://github.com/emanuellisntos/ProjetoWeb/assets/99870160/5123885d-be16-4a08-8d8e-f98451017bd3)
+![image](https://github.com/emanuellisntos/ProjetoWeb-Trackie/assets/99870160/0238e082-caed-4c27-873c-f83fb1e19c87)
 
 ---
 
@@ -77,13 +77,13 @@ Artista
 
 Álbum
 
-![6](https://github.com/emanuellisntos/ProjetoWeb/assets/99870160/a28b8d5b-b102-4eba-b3e7-fec4d0871bbd)
+![icone album](https://github.com/emanuellisntos/ProjetoWeb-Trackie/assets/99870160/a988472f-5263-428b-8f65-d2eb222f186f)
 
 <br>
 
 Música
 
-![5](https://github.com/emanuellisntos/ProjetoWeb/assets/99870160/d8a5b676-e859-452b-a5d4-2f4c2be21ace)
+![icone musica](https://github.com/emanuellisntos/ProjetoWeb-Trackie/assets/99870160/227d36d3-dcbf-464c-bd76-a1f35dd91db9)
 
 <br>
 
