@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  background-color: #f0f0f0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+  z-index: 100;
+}
+
+.nav {
+  height: 3.5rem;
+}
+
+.nav__logo, 
+.nav__burger, 
+.nav__close {
+  color: #000;
+}
+
+.nav__data {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-weight: 500;
+}
+
+.nav__toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.nav__burger, 
+.nav__close {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity .1s, transform .4s;
+  right: 40px;
+}
+
+.nav__close {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1118px) {
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top .4s, opacity .3s;
+  }
+  .nav__menu::-webkit-scrollbar {
+    width: 0;
+  }
+  .nav__list {
+    background-color: #fff;
+    padding-top: 1rem;
+  }
+}
+
+.nav__link {
+  color: #000;
+  background-color: #fff;
+  font-weight: 500;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color .3s, color 0.5s; 
+  margin-right: 1rem; 
+}
+
+.nav__link:hover {
+  color: #DC2626;
+}
+
+.show-menu {
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+
+.show-icon .nav__burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav__close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+.dropdown__item {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown__arrow {
+  font-size: 1.25rem;
+  font-weight: initial;
+  transition: transform .4s;
+}
+
+.dropdown__link {
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: 500;
+}
+
+.dropdown__link i {
+  font-size: 1.25rem;
+  font-weight: initial;
+}
+
+.dropdown__link:hover {
+  color: #DC2626;
+}
+
+.dropdown__menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease-out;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+  min-width: 200px;
+}
+
+.dropdown__item:hover .dropdown__menu {
+  max-height: 1000px;
+  transition: max-height .4s ease-in;
+}
+
+.dropdown__item:hover .dropdown__arrow {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1118px) {
+  .nav {
+    height: calc(3.5rem + 2rem);
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__list {
+    height: 100%;
+    display: flex;
+    column-gap: 3rem;
+  }
+  .nav__link {
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    column-gap: .25rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .nav__link:hover {
+    background-color: transparent;
+  }
+
+  .dropdown__item {
+    position: relative;
+  }
+
+  .dropdown__menu {
+    max-height: initial;
+    overflow: initial;
+    position: absolute;
+    left: 0;
+    top: 3.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s, top .3s;
+  }
+
+  .dropdown__link {
+    padding-inline: 1rem 3.5rem;
+  }
+
+  .dropdown__menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.5rem);
+    min-width: 200px;
+  }
+
+  .dropdown__item:hover .dropdown__menu {
+    opacity: 1;
+    top: 100%;
+    pointer-events: initial;
+    transition: top .3s;
+  }
+}
+
+#header__logo {
+  width: 200px;
+  height: 70px; 
+}
+
+main {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 89px;
+}
+
+.main__section-banner { 
+    height: 320px; 
+    background-image: url(../img/banner-index/banner.png);
+    background-size: cover;
+    background-position:center;
+}
+
+.main__section-recommendation {
+    margin: 50px 50px;
+    margin-top: 70px;
+}
+
+.main__section-recommendation h1 {
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+.main__section-recommendation h3 {
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.main__section-recommendation-iframe {
+    margin-top: 30px;
+    font-weight: 300;
+}
+
+.footer {
+    background-color: #DC2626;
+    color: #fff;
+    padding: 10px;
+}
+
+.footer__nav {
+    text-align: center;
+}
+
+.footer__nav li {
+    display: inline-block;
+    margin: 0 10px;  
+}
+
+.footer__nav a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.footer__nav p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+
+.footer__nav-socials {
+    margin: 40px;
+}
+
+.footer__nav-socials .footer__nav-socials-item {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__nav-socials .footer__nav-socials-item svg {
+    width: 27px;
+    height: 27px;
+}
+
+.footer__nav-links-top ul li,
+.footer__nav-links-bottom ul li {
+    position: relative;
+}
+
+.footer__nav-links-top ul li:not(:last-child)::after,
+.footer__nav-links-bottom ul li:not(:last-child)::after {
+    color: #DF9E9E;
+    content: "\2022";
+    position: absolute;
+    right: -15px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__nav-links-top, .footer__nav-links-bottom {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .main__section-banner {
+    display: none;
+  }
+}

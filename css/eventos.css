@@ -1,0 +1,176 @@
+.main__section {
+    margin-bottom: 30px;
+}
+
+.main__section-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #252323;
+    padding: 5%;
+}
+
+.main__section-search form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__section-search label {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.search-container {
+    position: relative;
+    width: 80vh;
+}
+
+.search-container input {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 50px 10px 15px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.search-container button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-container button i {
+    color: #000;
+}
+
+.main__section-events-c {
+    position: relative;
+    margin: 50px;
+}
+
+.cards-events {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.event-card:hover {
+    color: #DC2626;
+    transition: 0.5s;
+}
+
+.cards-events img {
+    width: 378px;
+    height: 214px;
+    border-radius: 30px;
+    object-fit: cover;
+    box-shadow: 0 2px 16px hsla(180, 3%, 6%, 0.3);
+}
+
+.event-caption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f0f0f0;
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin: -23px;
+    margin-top: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev svg, .next svg {
+    width: 32px;
+    height: 32px;
+}
+
+.main__section-map {
+    position: relative;
+    margin-top: 5%;
+    padding-bottom: 36.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.main__section-map h2, .main__section-events h2 {
+    margin: 0 0 15px 30px;
+    font-weight: 400;
+}
+
+.main__section-map iframe,   
+.main__section-map object,  
+.main__section-map embed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .main__section-search {
+        padding: 50px;
+    }
+
+    .search-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cards-events img {
+        cursor: pointer;
+        width: 308px;
+        height: 154px;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+
+    .event-caption {
+        margin-bottom: 10px;
+    }
+    
+    .prev, .next {
+        margin: -63px;
+        margin-top: 20px;
+    }
+}
+

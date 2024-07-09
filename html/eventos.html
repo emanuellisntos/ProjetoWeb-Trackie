@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/eventos.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icone-navegador/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icone-navegador/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icone-navegador/favicon-16x16.png">
+    <link rel="manifest" href="../img/icone-navegador/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>eventos musicais</title>
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+    <div id="content" class="content">
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="../index.html" class="nav__logo">
+                 <img src="../img/logo/logo.svg" alt="Logo Trackie" id="header__logo">
+              </a>
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+  
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href="../index.html" class="nav__link">home</a></li>
+  
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       explorar <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+  
+                    <ul class="dropdown__menu">
+                        <li><a href="../html/explorar.html" class="dropdown__link">explorar tudo</a></li>
+                        <li><a href="../html/eventos.html" class="dropdown__link">eventos musicais</a></li>
+                    </ul>
+                 </li>
+  
+                 <li><a href="../html/contato.html" class="nav__link">contato</a></li>
+              </ul>
+           </div>
+        </nav>
+     </header>
+
+    <main class="main">
+        <section class="main__section">
+            <div class="main__section-t">
+                <h1>eventos musicais</h1>
+            </div>
+            <div class="main__section-search">
+                <form>
+                    <label for="search">Procurando por algo mais específico?</label>
+                    <div class="search-container">
+                        <input type="text" id="search" name="search" placeholder="Pesquise por eventos musicais, shows, festivais...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="main__section-events">
+            <div class="main__section-events-c">
+                <h2>Eventos neste fim de semana</h2>
+                <div class="cards-events">
+                    <div class="event-card">
+                        <img src="../img/banner-eventos/festadojoao.jpg" alt="">
+                        <div class="event-caption">
+                            <strong>Festa do João</strong><br>
+                            Sábado, 20h
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="../img/banner-eventos/showdajoanaedomario.jpg" alt="">
+                        <div class="event-caption">
+                            <strong>Show da Joana e do Mário</strong><br>
+                            Sábado, 23h
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="../img/banner-eventos/festivaltrackiechella.jpg" alt="">
+                        <div class="event-caption">
+                            <strong>Festival Trackiechella</strong><br>
+                            Domingo, 16h
+                        </div>
+                    </div>
+                </div>
+                <button class="prev">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z" fill="#DC2626"></path>
+                    </svg>
+                </button>
+                <button class="next">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#DC2626"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="main__section-events-c">
+                <h2>Festas e shows nas próximas semanas</h2>
+                <div class="cards-events">
+                    <div class="event-card">
+                        <img src="../img/banner-eventos/festadadamaria.jpg" alt="">
+                        <div class="event-caption">
+                            <strong>Festa da Maria</strong><br>
+                            Quarta, 22h
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="../img/banner-eventos/festadomario.jpg" alt="">
+                        <div class="event-caption">
+                            <strong>Festa do Mário</strong><br>
+                            Quinta, 20h
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="../img/banner-eventos/festivaltrackieinrio.jpg" alt="">
+                        <div class="event-caption">
+                            <strong>Festival Trackie in Rio</strong><br>
+                            Sexta, 18h
+                        </div>
+                    </div>
+                </div>
+                <button class="prev">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z" fill="#DC2626"></path>
+                    </svg>
+                </button>
+                <button class="next">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#DC2626"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="main__section-events-c">
+                <h2>Eventos do próximo mês</h2>
+                <div class="cards-events">
+                    <div class="event-card">
+                        <img src="../img/banner-eventos/festadajoana.jpg" alt="">
+                        <div class="event-caption">
+                            <strong>Festa da Joana</strong><br>
+                            Dia 7, 19h
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="../img/banner-eventos/showdojoaoedamaria.jpg" alt="">
+                        <div class="event-caption">
+                            <strong>Show do João e da Maria</strong><br>
+                            Dia 18, 22h
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="../img/banner-eventos/festivaltrackiepalooza.jpg" alt="">
+                        <div class="event-caption">
+                            <strong>Festival Trackiepalooza</strong><br>
+                            Dia 25, 20h
+                        </div>
+                    </div>
+                </div>
+                <button class="prev">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z" fill="#DC2626"></path>
+                    </svg>
+                </button>
+                <button class="next">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#DC2626"></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        
+        <section class="main__section-map">
+            <h2>Explore eventos na sua localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15675.212130844424!2d-42.73350836076918!3d-10.826380328492863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x765921521a3a289%3A0xd0bc236aee3dda01!2sXique-Xique%2C%20BA%2C%2047400-000!5e0!3m2!1spt-BR!2sbr!4v1720390434470!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section><br><br><br>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav-socials">
+                <li><a href="https://www.instagram.com/emanuellisntos/" target="_blank"><div class="footer__nav-socials-item"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M 12 3 C 7.04 3 3 7.04 3 12 L 3 38 C 3 42.96 7.04 47 12 47 L 38 47 C 42.96 47 47 42.96 47 38 L 47 12 C 47 7.04 42.96 3 38 3 L 12 3 z M 38 8 L 41 8 C 41.55 8 42 8.45 42 9 L 42 12 C 42 12.55 41.55 13 41 13 L 38 13 C 37.45 13 37 12.55 37 12 L 37 9 C 37 8.45 37.45 8 38 8 z M 25 10 C 30.33 10 35.019688 12.8 37.679688 17 L 42 17 L 42 37 C 42 39.76 39.76 42 37 42 L 13 42 C 10.24 42 8 39.76 8 37 L 8 17 L 12.320312 17 C 14.980313 12.8 19.67 10 25 10 z M 25 12 C 17.83 12 12 17.83 12 25 C 12 32.17 17.83 38 25 38 C 32.17 38 38 32.17 38 25 C 38 17.83 32.17 12 25 12 z M 25 16 C 29.96 16 34 20.04 34 25 C 34 29.96 29.96 34 25 34 C 20.04 34 16 29.96 16 25 C 16 20.04 20.04 16 25 16 z"></path>
+                </svg></div></a></li>
+                <li><a href="https://open.spotify.com/user/emanuaio?si=10c3ac4622424c4d" target="_blank"><div class="footer__nav-socials-item"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M25.009,1.982C12.322,1.982,2,12.304,2,24.991S12.322,48,25.009,48s23.009-10.321,23.009-23.009S37.696,1.982,25.009,1.982z M34.748,35.333c-0.289,0.434-0.765,0.668-1.25,0.668c-0.286,0-0.575-0.081-0.831-0.252C30.194,34.1,26,33,22.5,33.001 c-3.714,0.002-6.498,0.914-6.526,0.923c-0.784,0.266-1.635-0.162-1.897-0.948s0.163-1.636,0.949-1.897 c0.132-0.044,3.279-1.075,7.474-1.077C26,30,30.868,30.944,34.332,33.253C35.022,33.713,35.208,34.644,34.748,35.333z M37.74,29.193 c-0.325,0.522-0.886,0.809-1.459,0.809c-0.31,0-0.624-0.083-0.906-0.26c-4.484-2.794-9.092-3.385-13.062-3.35 c-4.482,0.04-8.066,0.895-8.127,0.913c-0.907,0.258-1.861-0.272-2.12-1.183c-0.259-0.913,0.272-1.862,1.184-2.12 c0.277-0.079,3.854-0.959,8.751-1c4.465-0.037,10.029,0.61,15.191,3.826C37.995,27.328,38.242,28.388,37.74,29.193z M40.725,22.013 C40.352,22.647,39.684,23,38.998,23c-0.344,0-0.692-0.089-1.011-0.275c-5.226-3.068-11.58-3.719-15.99-3.725 c-0.021,0-0.042,0-0.063,0c-5.333,0-9.44,0.938-9.481,0.948c-1.078,0.247-2.151-0.419-2.401-1.495 c-0.25-1.075,0.417-2.149,1.492-2.4C11.729,16.01,16.117,15,21.934,15c0.023,0,0.046,0,0.069,0 c4.905,0.007,12.011,0.753,18.01,4.275C40.965,19.835,41.284,21.061,40.725,22.013z"></path>
+                </svg></div></a></li>
+                <li><a href="https://www.last.fm/pt/user/sheseviI" target="_blank"><div class="footer__nav-socials-item"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M 22.300781 34.398438 L 20.699219 30.101563 C 20.699219 30.101563 18.101563 33 14.101563 33 C 10.699219 33 8 29.800781 8 25 C 8 18.898438 11.300781 17 14.398438 17 C 18.800781 17 20.199219 19.800781 21.5 23.398438 L 23.101563 28.300781 C 24.699219 33.101563 27.699219 37 36.5 37 C 42.699219 37 47 35.101563 47 30.199219 C 47 26.199219 44.699219 24.101563 40.300781 23.101563 L 37.101563 22.398438 C 34.898438 21.898438 34.101563 20.898438 34.101563 19.5 C 34.101563 17.800781 35.800781 17 38 17 C 40.398438 17 41.800781 17.898438 42 20 L 47 19 C 46.601563 14.5 43.300781 13 38.101563 13 C 33.601563 13 29 14.601563 29 20 C 29 23.398438 30.800781 25.601563 35 26.601563 L 38.398438 27.398438 C 40.898438 27.898438 41.898438 29 41.898438 30.398438 C 41.898438 32.199219 39.898438 33 36.5 33 C 31.398438 33 29.300781 30.398438 28.101563 26.800781 L 26.398438 21.898438 C 24.300781 15.398438 20.898438 13 14.199219 13 C 6.800781 13 3 17.449219 3 25.25 C 3 32.75 6.800781 37 13.898438 37 C 19.601563 37 22.300781 34.398438 22.300781 34.398438 Z"></path>
+                </svg></div></a></li>
+            </ul>
+            <section class="footer__nav-links-top">
+                <ul>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </section>
+            <section class="footer__nav-links-bottom">
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </section>
+            <p>&copy; 2024 Trackie</p>    
+        </nav>       
+    </footer>
+    <script src="../js/eventos-carrosel.js"></script>
+    <script src="../js/navbar-responsiva.js"></script>
+    <script src="../js/loader.js"></script>
+</body>
+</html>
